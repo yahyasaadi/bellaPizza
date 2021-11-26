@@ -19,7 +19,7 @@
         <h2>Home of Beautiful, Delicious Pizza.</h2>
     </div>
     <div class="container">
-        <form action="">
+        <form id="new_order" action="">
             <label for="pizza-size"><strong>Choose pizza size:</strong></label><br>
             <select name="pizzaSizeOptions" id="pizzaSizeOptions">
                 <option value="small">Small</option>
@@ -40,8 +40,13 @@
             <input type="radio" id="green-pepper" name="toppings" value="Green Pepper">
             <label for="green-pepper">Green Pepper</label><br>
             <input type="radio" id="onions" name="toppings" value="Onions">
-            <label for="onions">Onions</label>
+            <label for="onions">Onions</label><br>
+            <button type="submit" class="btn">Order</button>
         </form>
+        <div id="orders">
+            <p>Your total is here:</p>
+
+        </div>
     </div>
 </body>
 </html>
