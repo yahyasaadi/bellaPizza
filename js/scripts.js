@@ -7,17 +7,22 @@ function Pizza(size, crust, topping){
     this.crusts = crust;
     this.toppings = topping;
     this.totalPrice = function(){
-        return this.sizePrice + this.crustPrice + this.toppingsPrice;
+        // return 
   }
 }
-
+/*
 // Try an array for the prices
 var sizePrices = [50, 75, 100];
 var crustPrices = [25, 40, 80];
 var toppingsPrices = [20, 30, 15, 5];
+*/
+
+
 
 // var conceptName = $('#aioConceptName').find(":selected").text();
 // for radioButton $("input[name='optradio']:checked").val();
+
+
 
 $(document).ready(function(){
     $("#new_order").submit(function(e){
@@ -25,14 +30,26 @@ $(document).ready(function(){
         var pizzaSize = $("#pizzaSizeOptions").find(":selected").text();
         var crustType = $("#crustOptions").find(":selected").text();
         var toppingsOption = $("input[name='toppings']:checked").val();
+        
         var newPizza = new Pizza(pizzaSize, crustType, toppingsOption);
-
-        if (newPizza.sizes === "Small" && newPizza.crusts === "Crispy" && newPizza.toppings === "Pepperoni"){
-            alert(sizePrices[0] + crustPrices[0] + toppingsPrices[1]);
-        } else {
-            alert("Nadda!");
+        // alert(newPizza.sizes);
+        
+        prices = {
+            "Small": 20,
+            "Medium": 10,
+            "Large": 15,
+            "Crispy": 25,
+            "Stuffed": 5,
+            "Gluton-free": 35,
+            "Mushrooms": 40,
+            "Pepperoni": 25,
+            "Green Pepper": 3
         }
-        // consit
-        // alert(newPizza.toppingsOption);
+
+        totalAmount = prices[newPizza.sizes] + prices[newPizza.crusts] + prices[newPizza.toppings];
+
+        alert(totalAmount);
+        
+       
     });
 });
