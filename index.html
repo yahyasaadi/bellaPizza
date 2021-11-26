@@ -20,18 +20,27 @@
     </div>
     <div class="container">
         <form action="">
-            <label for="pizza-size">Choose pizza size:</label><br>
+            <label for="pizza-size"><strong>Choose pizza size:</strong></label><br>
             <select name="pizzaSizeOptions" id="pizzaSizeOptions">
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
                 <option value="large">Large</option>
             </select><br>
-            <label for="crust">Choose your crust of choice:</label><br>
+            <label for="crust"><strong>Choose your crust of choice:</strong></label><br>
             <select name="crustOptions" id="crustOptions">
                 <option value="crispy">Crispy</option>
                 <option value="stuffed">Stuffed</option>
                 <option value="gluton-free">Gluton-free</option>
-            </select>
+            </select><br>
+            <label for="toppings"><strong>Choose a topping for your Pizza:</strong></label><br>
+            <input type="radio" id="mushrooms" name="toppings" value="Mushrooms">
+            <label for="mushrooms">Mushrooms</label><br>
+            <input type="radio" id="pepperoni" name="toppings" value="Pepperoni">
+            <label for="pepperoni">Pepperoni</label><br>
+            <input type="radio" id="green-pepper" name="toppings" value="Green Pepper">
+            <label for="green-pepper">Green Pepper</label><br>
+            <input type="radio" id="onions" name="toppings" value="Onions">
+            <label for="onions">Onions</label>
         </form>
     </div>
 </body>
