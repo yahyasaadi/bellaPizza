@@ -1,9 +1,10 @@
-.bar li a {
+#bar li a {
 	display: block;
-	color: white;
+    font-size: 150%;
 	text-align: center;
-	padding: 30px 30px 30px 30px;
+	padding: 10px 10px;
 	text-decoration: none;
+    margin: 5px 5px;
 }
 
 li a:hover {
