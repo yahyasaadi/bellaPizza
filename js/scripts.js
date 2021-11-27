@@ -10,17 +10,7 @@ function Pizza(size, crust, topping){
         // return 
   }
 }
-/*
-// Try an array for the prices
-var sizePrices = [50, 75, 100];
-var crustPrices = [25, 40, 80];
-var toppingsPrices = [20, 30, 15, 5];
-*/
 
-
-
-// var conceptName = $('#aioConceptName').find(":selected").text();
-// for radioButton $("input[name='optradio']:checked").val();
 
 
 
