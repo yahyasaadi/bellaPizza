@@ -47,8 +47,9 @@ $(document).ready(function(){
         }
 
         totalAmount = prices[newPizza.sizes] + prices[newPizza.crusts] + prices[newPizza.toppings];
-
-        alert(totalAmount);
+        statement = "Your order total is " + totalAmount;
+        $("ul#ordersList").append("<li><span class='order'>" + statement + "</span></li>");
+        // alert(totalAmount);
         
        
     });
