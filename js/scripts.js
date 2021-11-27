@@ -50,6 +50,10 @@ $(document).ready(function(){
         statement = "Your order total is " + totalAmount;
         $("ul#ordersList").append("<li><span class='order'>" + statement + "</span></li>");
         // alert(totalAmount);
+
+        var pizzaSize = $("#pizzaSizeOptions").find(":selected").text();
+        var crustType = $("#crustOptions").find(":selected").text();
+        var toppingsOption = $("input[name='toppings']:checked").val();
         
        
     });
