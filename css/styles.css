@@ -15,3 +15,22 @@
 li a:hover {
 	background-color: #111;
 }
+
+
+div#welcome {
+	background-image: url('../assets/likemeat-CbNAuxSZTFo-unsplash.jpg');
+	padding: 205px 300px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+div#welcome h1 {
+	text-align: center;
+	/* color:darkturquoise; */
+    color: white;
+}
+
+div#welcome p {
+	text-align: center;
+	color: white;
+}
