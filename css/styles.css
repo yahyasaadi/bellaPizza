@@ -25,12 +25,11 @@ div#welcome {
 }
 
 div#welcome h1 {
-	text-align: center;
-	/* color:darkturquoise; */
+	text-align: left;
     color: white;
 }
 
 div#welcome p {
-	text-align: center;
+	text-align: left;
 	color: white;
 }
