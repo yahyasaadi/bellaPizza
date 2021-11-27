@@ -1,3 +1,7 @@
+#bar {
+    background-color: aquamarine;
+}
+
 #bar li a {
 	display: block;
     font-size: 150%;
@@ -5,6 +9,7 @@
 	padding: 10px 10px;
 	text-decoration: none;
     margin: 5px 5px;
+    
 }
 
 li a:hover {
