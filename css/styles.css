@@ -33,3 +33,13 @@ div#welcome p {
 	text-align: left;
 	color: white;
 }
+
+
+#row1 {
+	/* border: 1px solid black; */
+	padding-bottom: 10px;
+}
+
+#row2 {
+	padding-bottom: 10px;
+}

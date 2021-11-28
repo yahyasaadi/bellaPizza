@@ -56,7 +56,7 @@
     </div>
     <div class="container">
         <form id="new_order" action="">
-            <div class="row">
+            <div class="row" id="row1">
                 <div class="col-md-6">
                     <label for="pizza-size"><strong>Choose pizza size:</strong></label><br>
                     <select name="pizzaSizeOptions" id="pizzaSizeOptions">
@@ -73,12 +73,23 @@
                 </div>
             </div>
             
-            <label for="crust"><strong>Choose your crust of choice:</strong></label><br>
-            <select name="crustOptions" id="crustOptions">
-                <option value="crispy">Crispy</option>
-                <option value="stuffed">Stuffed</option>
-                <option value="gluton-free">Gluton-free</option>
-            </select><br>
+            <div class="row" id="row2">
+                <div class="col-md-6">
+                    <label for="crust"><strong>Choose your crust of choice:</strong></label><br>
+                    <select name="crustOptions" id="crustOptions">
+                        <option value="crispy">Crispy</option>
+                        <option value="stuffed">Stuffed</option>
+                        <option value="gluton-free">Gluton-free</option>
+                    </select><br>
+                </div>
+                <div id="crustPice" class="col-md-6">
+                    <h3>Price of Crust:</h3>
+                    <h5>
+
+                    </h5>
+                </div>
+            </div>
+            
             <label for="toppings"><strong>Choose a topping for your Pizza:</strong></label><br>
             <input type="radio" id="mushrooms" name="toppings" value="Mushrooms">
             <label for="mushrooms">Mushrooms</label><br>
