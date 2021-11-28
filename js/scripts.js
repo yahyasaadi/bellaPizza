@@ -58,4 +58,18 @@ $(document).ready(function(){
         var toppingsOption = $("input[name='toppings']:checked").val();
        
     });
+
+    $("#delivery").click(function(){
+        var deliveryOption = $("#delivery").find(":selected").text();
+        if (deliveryOption === "Deliver"){
+            var location = prompt("Where do you want it delivered? ");
+            alert("Your pizza will be delivered at: " + location);
+        } else if (deliveryOption === "Pick Up") {
+            alert("See you soon.");
+        } else {
+            alert("Please pick a delivery option.");
+        }
+        //alert(prices[pizzaSize]);
+        var pizzaSize = $("#pizzaSizeOptions").find(":selected").text();
+    });
 });
