@@ -29,6 +29,7 @@ $(document).ready(function(){
         "Green Pepper": 3
     }
 
+    // NOT WORKING AS WANTED CHECK
     $("#pizzaSizeOptions").click(function(){
         var pizzaSize = $("#pizzaSizeOptions").find(":selected").text();
         $("#sizePrice").append("<p><span class='order'>" + prices[pizzaSize] + "</span></p>");
