@@ -22,7 +22,7 @@ If you want to have the project on your computer, you can:
 ## Support and contact details
 You can reach me on:
 * yahyasnoor@gmail.com
-* [twitter:](https://twitter.com/yahyasnoor)
+* [Twitter](https://twitter.com/yahyasnoor)
 ## License
 The MIT Open source License: [MIT LICENSE](https://opensource.org/licenses/MIT)
 ### List of contributors

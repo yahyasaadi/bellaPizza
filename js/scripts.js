@@ -43,11 +43,11 @@ $(document).ready(function(){
 
     });
 
-    $("#toppingsOptions").click(function(){
-        var toppingsOption = $("input[name='toppings']:checked").val();
-        $("#toppingsPrice").append("<p><span class='order'>" + prices[toppingsOption] + "</span></p>");
+    // $("#toppingsOptions").click(function(){
+    //     var toppingsOption = $("input[name='toppings']:checked").val();
+    //     $("#toppingsPrice").append("<p><span class='order'>" + prices[toppingsOption] + "</span></p>");
 
-    });
+    // });
 
     $("#new_order").submit(function(e){
         e.preventDefault();
