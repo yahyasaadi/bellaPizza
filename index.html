@@ -24,10 +24,7 @@
                 <a class="nav-link" href="#aboutus">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#order">Feedback</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#order">Order</a>
               </li>
             </ul>
         </div>
@@ -37,19 +34,7 @@
         <h1>TO BELLA PIZZA</h1>
         <p>DELICIOUS HOME-MADE PIZZA ARE WAITING FOR YOU EAT</p>
     </div>
-    <div id="aboutus" class="container">
-        <h4>About Us</h4>
-        <p>
-            Bella Pizza is family owned pizza shop that's run with an eyes for quality pizza.
-            The pizza shop was first established in 2017 to bidged the gap for more home-made 
-            pizza options. When pizza is produced on a massive scale it looses the personal touch
-            and sometimes can feel tasteless. 
-        </p>
-        <p>
-            Here, at Bella Pizza we give our pizza more meaning and making it more home-made like and 
-            delicious for the clients to enjoy at the comfort of their living rooms. 
-        </p>
-    </div>
+    
     <div class="container">
         <h1>Hi, Place your order please</h1>
     </div>
@@ -89,14 +74,17 @@
                 </div>
             </div>
             <div class="row" id="row3">
-                <div class="col-md-6" id="toppingsOptions">
-                    <label for="toppings"><strong>Choose a topping for your Pizza:</strong></label><br>
-                    <input type="radio" id="mushrooms" name="toppings" value="Mushrooms">
-                    <label for="mushrooms">Mushrooms</label><br>
-                    <input type="radio" id="pepperoni" name="toppings" value="Pepperoni">
-                    <label for="pepperoni">Pepperoni</label><br>
-                    <input type="radio" id="green-pepper" name="toppings" value="Green Pepper">
-                    <label for="green-pepper">Green Pepper</label><br>
+                <div class="col-md-6" >
+                    <section id="toppingsOptions">
+                        <label for="toppings"><strong>Choose a topping for your Pizza:</strong></label><br>
+                        <input type="radio" id="mushrooms" name="toppings" value="Mushrooms">
+                        <label for="mushrooms">Mushrooms</label><br>
+                        <input type="radio" id="pepperoni" name="toppings" value="Pepperoni">
+                        <label for="pepperoni">Pepperoni</label><br>
+                        <input type="radio" id="green-pepper" name="toppings" value="Green Pepper">
+                        <label for="green-pepper">Green Pepper</label><br>
+                    </section>
+                    
                 </div>
                 <div id="toppingsPrice" class="col-md-6">
                     <h4>Price of Topping:</h4>
@@ -115,12 +103,29 @@
 
             </ul>
         </div>
-        <select name="delivery" id="delivery">
-            <option value="Delivery Option">Pick a Delivery Option</option>
-            <option value="yes" id="deliverOption">Deliver</option>
-            <option value="pick-up">Pick Up</option>
-        </select><br>
-        <button type="submit" class="btn btn-primary">Check Out</button>
+        <div id="deliveryDiv">
+            <select name="delivery" id="delivery">
+                <option value="Delivery Option">Pick a Delivery Option</option>
+                <option value="yes" id="deliverOption">Deliver</option>
+                <option value="pick-up">Pick Up</option>
+            </select><br>
+        </div>
+        
+        <button id="checkOutBtn" type="submit" class="btn btn-primary">Check Out</button><br>
+
+        <div id="aboutus" class="container">
+            <h4>About Us</h4>
+            <p>
+                Bella Pizza is family owned pizza shop that's run with an eyes for quality pizza.
+                The pizza shop was first established in 2017 to bidged the gap for more home-made 
+                pizza options. When pizza is produced on a massive scale it looses the personal touch
+                and sometimes can feel tasteless. 
+            </p>
+            <p>
+                Here, at Bella Pizza we give our pizza more meaning and making it more home-made like and 
+                delicious for the clients to enjoy at the comfort of their living rooms. 
+            </p>
+        </div>
     </div>
 </body>
 </html>
