@@ -11,7 +11,8 @@ The application allows a customer to choose the size, crust and topping to go on
 * Bootstrap
 
 ## Known Bugs
-No known bags at the moment but still working on making the site more efficient and appealing. I want to add better looking animations with time.
+No known bugs at the moment but still working on making the site more efficient and appealing.
+There are some requirements I have been unable to do but will add once I know how to do them.
 
 ## Installation
 If you want to have the project on your computer, you can:
@@ -21,7 +22,7 @@ If you want to have the project on your computer, you can:
 ## Support and contact details
 You can reach me on:
 * yahyasnoor@gmail.com
-* twitter: https://twitter.com/yahyasnoor
+* [twitter:](https://twitter.com/yahyasnoor)
 ## License
 The MIT Open source License: [MIT LICENSE](https://opensource.org/licenses/MIT)
 ### List of contributors
