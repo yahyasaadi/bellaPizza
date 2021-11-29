@@ -18,15 +18,15 @@ $(document).ready(function(){
 
 
     prices = {
-        "Small": 20,
-        "Medium": 10,
-        "Large": 15,
-        "Crispy": 25,
-        "Stuffed": 5,
-        "Gluton-free": 35,
-        "Mushrooms": 40,
-        "Pepperoni": 25,
-        "Green Pepper": 3
+        "Small": 100,
+        "Medium": 150,
+        "Large": 200,
+        "Crispy": 50,
+        "Stuffed": 55,
+        "Gluton-free": 60,
+        "Mushrooms": 30,
+        "Pepperoni": 40,
+        "Green Pepper": 20
     }
 
     // NOT WORKING AS WANTED CHECK
@@ -35,6 +35,12 @@ $(document).ready(function(){
         $("#sizePrice").append("<p><span class='order'>" + prices[pizzaSize] + "</span></p>");
         //alert(prices[pizzaSize]);
         var pizzaSize = $("#pizzaSizeOptions").find(":selected").text();
+    });
+
+    $("#crustOptions").click(function(){
+        var crustType = $("#crustOptions").find(":selected").text();
+        $("#crustPice").append("<p><span class='order'>" + prices[crustType] + "</span></p>");
+
     });
 
     $("#new_order").submit(function(e){
