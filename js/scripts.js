@@ -6,11 +6,23 @@ function Pizza(size, crust, topping){
     this.sizes = size;
     this.crusts = crust;
     this.toppings = topping;
-    this.totalPrice = function(){
-        // return 
-  }
+    this.prices = {
+        "Small": 100,
+        "Medium": 150,
+        "Large": 200,
+        "Crispy": 50,
+        "Stuffed": 55,
+        "Gluton-free": 60,
+        "Mushrooms": 30,
+        "Pepperoni": 40,
+        "Green Pepper": 20
+    }
 }
 
+
+Pizza.prototype.totalPrice = function(){
+    return this.prices[this.sizes] + this.prices[this.crusts] + this.prices[this.toppings];
+}
 
 
 
@@ -56,14 +68,12 @@ $(document).ready(function(){
         var toppingsOption = $("input[name='toppings']:checked").val();
         
         var newPizza = new Pizza(pizzaSize, crustType, toppingsOption);
-        // alert(newPizza.sizes);
         
         
 
-        totalAmount = prices[newPizza.sizes] + prices[newPizza.crusts] + prices[newPizza.toppings];
-        statement = "Your order total is " + totalAmount;
+        // totalAmount = prices[newPizza.sizes] + prices[newPizza.crusts] + prices[newPizza.toppings];
+        statement = "Your order total is " + newPizza.totalPrice();
         $("ul#ordersList").append("<li><span class='order'>" + statement + "</span></li>");
-        // alert(totalAmount);
 
         var pizzaSize = $("#pizzaSizeOptions").find(":selected").text();
         var crustType = $("#crustOptions").find(":selected").text();
@@ -84,4 +94,14 @@ $(document).ready(function(){
         //alert(prices[pizzaSize]);
         var pizzaSize = $("#pizzaSizeOptions").find(":selected").text();
     });
+
+     // TESTING
+     $("#checkOutForm").submit(function(e){
+        e.preventDefault();
+        while ($("#ordersList").length > 0){
+            totalBill = totalBill + newPizza.totalPrice();
+        }
+    });
+    // End of testing
+
 });
