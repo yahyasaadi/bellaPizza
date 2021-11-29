@@ -96,12 +96,17 @@ $(document).ready(function(){
     });
 
      // TESTING
-     $("#checkOutForm").submit(function(e){
-        e.preventDefault();
-        while ($("#ordersList").length > 0){
-            totalBill = totalBill + newPizza.totalPrice();
-        }
-    });
+    //  $("#checkOutForm").submit(function(e){
+    //     e.preventDefault();
+        
+    //     var newPizza = new Pizza(pizzaSize, crustType, toppingsOption);
+
+    //     totalBill = 0;
+    //     while ($("#ordersList").length > 0){
+    //         totalBill = totalBill + newPizza.totalPrice();
+    //     }
+    //     alert(totalBill);
+    // });
     // End of testing
 
 });

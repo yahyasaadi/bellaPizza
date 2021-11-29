@@ -13,6 +13,7 @@ The application allows a customer to choose the size, crust and topping to go on
 ## Known Bugs
 No known bugs at the moment but still working on making the site more efficient and appealing.
 There are some requirements I have been unable to do but will add once I know how to do them.
+Still working on the Check Out button as it is not responsive at the moment.
 
 ## Installation
 If you want to have the project on your computer, you can:
